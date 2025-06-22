@@ -21,6 +21,20 @@
 
 body {
   background: var(--background);
+  background-color: #f8f8f5;
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Zen Maru Gothic", "Kiwi Maru", "Noto Sans JP", "Kosugi", "Sawarabi Gothic", "Zen Kaku Gothic New", "M PLUS 1p", "M PLUS Rounded 1c", "Kiwi Maru", "Hiragino Kaku Gothic ProN";
+  /* font-weight: 500; */
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-5px); }
+  40% { transform: translateX(5px); }
+  60% { transform: translateX(-3px); }
+  80% { transform: translateX(3px); }
+}
+
+.shake-on-hover:hover {
+  animation: shake 0.4s cubic-bezier(.36,.07,.19,.97) both;
 }
